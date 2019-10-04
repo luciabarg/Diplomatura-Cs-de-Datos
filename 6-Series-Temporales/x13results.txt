@@ -1,0 +1,1705 @@
+  Reading input spec file from /tmp/tmptfvirl_j.spc
+
+1
+
+               U. S. Department of Commerce, U. S. Census Bureau
+
+              X-13ARIMA-SEATS monthly seasonal adjustment Method,
+                          Release Version 1.1 Build 39
+
+
+           This software application provides an enhanced version of
+             Statistics Canada's X-11-ARIMA extension (Dagum, 1980)
+                 of the X-11 variant of the Census Method II of
+                      Shiskin, Young and Musgrave (1967).
+
+            It also provides an ARIMA model-based method following
+       Hillmer and Tiao (1982) and Burman (1980) that is very similar
+       to the update of the method of SEATS (Gomez and Maravall, 1996)
+                produced at the Bank of Spain by G. Caporello and
+               A. Maravall for TSW (Caporello and Maravall, 2004).
+          The present application includes additional enhancements.
+
+         X-13ARIMA-SEATS includes an automatic ARIMA model selection procedure
+          based largely on the procedure of Gomez and Maravall (1998)
+            as implemented in TRAMO (1996) and subsequent revisions.
+
+              Primary Programmers: Brian Monsell, Mark Otto and,
+                 for the ARIMA model-based signal extraction,
+                      Gianluca Caporello and Victor Gomez
+
+
+     Series Title- Residencial
+     Series Name- Residencial
+     Sep 17, 2019  10.49.28 
+
+        -Period covered-  1st month,2013 to  7th month,2019
+        -Type of run - auto-mode seasonal adjustment
+
+        -Sigma limits for graduating extreme values are  1.5 and  2.5 .
+        -3x3 moving average used in section 1 of each iteration, 
+         3x5 moving average in section 2 of iterations B and C,
+         moving average for final seasonal factors chosen by Global MSR.
+        -Spectral plots generated for selected series
+
+ FILE SAVE REQUESTS (* indicates file exists and will be overwritten)
+  /tmp/tmpuw5dc8ak.d11  final seasonally adjusted data
+  /tmp/tmpuw5dc8ak.d12  final trend cycle
+  /tmp/tmpuw5dc8ak.d13  final irregular component
+  /tmp/tmpuw5dc8ak.out  program output file
+  /tmp/tmpuw5dc8ak.err  program error file
+        Residencial            PAGE   1, SERIES Residencial
+
+     Contents of spc file /tmp/tmptfvirl_j.spc
+
+ Line #
+ ------
+      1: Series {
+      2:         data=(4538446.146000002
+      3: 3961686.119
+      4: 3612835.111
+      5: 3239380.702
+      6: 3919668.996
+      7: 4409513.94
+      8: 5088495.112
+      9: 4782603.023
+     10: 4072686.172
+     11: 3744478.197
+     12: 3680736.448
+     13: 5338633.582
+     14: 5350967.24
+     15: 3883775.33
+     16: 3666868.681
+     17: 3542163.135
+     18: 4182488.527
+     19: 4790674.034
+     20: 5115928.828
+     21: 4454936.701
+     22: 3746934.6960000005
+     23: 4186567.587
+     24: 3928614.0710000005
+     25: 4594222.428
+     26: 5096405.805
+     27: 4438153.482
+     28: 4823967.7
+     29: 3756852.843
+     30: 4224672.6510000015
+     31: 4941275.59
+     32: 5513160.882
+     33: 4797705.122
+     34: 4350513.945
+     35: 4362416.913
+     36: 3922901.043
+     37: 5196471.96
+     38: 5651444.906
+     39: 5012922.114
+     40: 4021324.893
+     41: 4104173.864
+     42: 4941093.0830000015
+     43: 5634160.61400001
+     44: 5586293.007
+     45: 4670442.057
+     46: 4314994.32
+     47: 3951646.962
+     48: 3949015.224
+     49: 5134842.971
+     50: 5672987.469
+     51: 4618226.1
+     52: 4470715.122
+     53: 3754330.119
+     54: 4524024.791
+     55: 5180585.33499999
+     56: 5460615.92500001
+     57: 4767354.968
+     58: 4217808.567
+     59: 3979729.611
+     60: 4035431.94
+     61: 5216357.134
+     62: 5468423.591
+     63: 4963781.74
+     64: 4492917.161
+     65: 4084109.75
+     66: 4282679.703
+     67: 5589702.67199999
+     68: 6193110.213
+     69: 5381723.02199999
+     70: 3927008.068
+     71: 3944426.868
+     72: 4001431.281
+     73: 4687693.0
+     74: 5280299.002
+     75: 4641198.268999998
+     76: 4004709.444
+     77: 3652724.519
+     78: 4356836.823
+     79: 4816838.1910000015
+     80: 5704951.016)
+     81: appendbcst=no
+     82: appendfcst=no
+     83: period=12
+     84: start=2013.1
+     85: title="Residencial"
+     86: name="Residencial"
+     87:  
+     88:         }
+     89:         transform{function=auto}
+     90: outlier{}
+     91: automdl{
+     92: maxorder = (2 1)
+     93: maxdiff = (2 1)
+     94: }
+     95: x11{ save=(d11 d12 d13) }
+
+
+ Likelihood statistics for model fit to untransformed series.
+
+ Likelihood Statistics
+ ------------------------------------------------------------------
+ Number of observations (nobs)                                   79
+ Effective number of observations (nefobs)                       66
+ Number of parameters estimated (np)                              3
+ Log likelihood (L)                                       -933.1159
+ AIC                                                      1872.2317 
+ AICC (F-corrected-AIC)                                   1872.6188 
+ Hannan Quinn                                             1874.8275 
+ BIC                                                      1878.8007 
+ ------------------------------------------------------------------
+
+
+ Likelihood statistics for model fit to log transformed series.
+
+ Likelihood Statistics
+ ------------------------------------------------------------------
+ Number of observations (nobs)                                   79
+ Effective number of observations (nefobs)                       66
+ Number of parameters estimated (np)                              3
+ Log likelihood                                             80.1609
+ Transformation Adjustment                               -1011.9825
+ Adjusted Log likelihood (L)                              -931.8216
+ AIC                                                      1869.6432 
+ AICC (F-corrected-AIC)                                   1870.0303 
+ Hannan Quinn                                             1872.2389 
+ BIC                                                      1876.2122 
+ ------------------------------------------------------------------
+
+
+   *****   AICC (with aicdiff=-2.00) prefers log transformation   *****
+   *****   Multiplicative seasonal adjustment will be performed.   ****
+
+
+
+        Residencial            PAGE   2, SERIES Residencial
+
+ A 1  Time series data (for the span analyzed)
+  From  2013.Jan to 2019.Jul
+  Observations         79
+ ------------------------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+                  May          Jun          Jul          Aug 
+                  Sep          Oct          Nov          Dec           TOTAL  
+ ------------------------------------------------------------------------------
+  2013        4538446.     3961686.     3612835.     3239381.
+              3919669.     4409514.     5088495.     4782603.
+              4072686.     3744478.     3680736.     5338634.        50389164.
+ 
+  2014        5350967.     3883775.     3666869.     3542163.
+              4182489.     4790674.     5115929.     4454937.
+              3746935.     4186568.     3928614.     4594222.        51444141.
+ 
+  2015        5096406.     4438153.     4823968.     3756853.
+              4224673.     4941276.     5513161.     4797705.
+              4350514.     4362417.     3922901.     5196472.        55424498.
+ 
+  2016        5651445.     5012922.     4021325.     4104174.
+              4941093.     5634161.     5586293.     4670442.
+              4314994.     3951647.     3949015.     5134843.        56972354.
+ 
+  2017        5672987.     4618226.     4470715.     3754330.
+              4524025.     5180585.     5460616.     4767355.
+              4217809.     3979730.     4035432.     5216357.        55898167.
+ 
+  2018        5468424.     4963782.     4492917.     4084110.
+              4282680.     5589703.     6193110.     5381723.
+              3927008.     3944427.     4001431.     4687693.        57017007.
+ 
+  2019        5280299.     4641198.     4004709.     3652725.
+              4356837.     4816838.     5704951.             
+                                                                     32457557.
+ 
+  AVGE        5294139.     4502820.     4156191.     3733391.
+              4347352.     5051821.     5523222.     4809127.
+              4104991.     4028211.     3919688.     5028037.
+
+  Table Total-     359602888.17   Mean-     4551935.29   Std. Dev.-      650011.46
+                                  Min -     3239380.70        Max -     6193110.21
+        Residencial            PAGE   3, SERIES Residencial
+                        Automatic ARIMA Model Selection
+
+                    Procedure based closely on TRAMO method 
+                         of Gomez and Maravall (2000)
+              "Automatic Modeling Methods for Univariate Series",
+                            A Course in Time Series
+                  (Edited by D. Pena, G. C. Tiao, R. S. Tsay),
+                         New York : J. Wiley and Sons
+
+
+     Maximum order for regular ARMA parameters :   2
+     Maximum order for seasonal ARMA parameters :   1
+     Maximum order for regular differencing :   2
+     Maximum order for seasonal differencing :   1
+
+   Results of Unit Root Test for identifying orders of differencing:
+     Regular difference order :   1
+     Seasonal difference order :   1
+
+     Mean is significant.
+
+  Automatic model choice : (0 1 1)(0 1 1)
+
+
+  Final Checks for Identified Model
+
+
+  Checking for Unit Roots.
+   No unit roots found.
+
+  Checking for nonseasonal overdifferencing.
+   Reduce order of nonseasonal MA, nonseasonal differencing.
+   ( 0, 0, 0) ( 0, 1, 1)
+
+  Checking for insignificant ARMA coefficients.
+
+  Final automatic model choice : (0 0 0)(0 1 1)
+   End of automatic model selection procedure.
+
+ Average absolute percentage error in within-sample forecasts:
+  Last year:   2.95      Last-1 year:   5.04     Last-2 year:   3.52
+  Last three years:    3.84
+
+ Estimation converged in   14 ARMA iterations,   57 function evaluations.
+
+ Regression Model
+ ------------------------------------------------------------------------------
+                             Parameter        Standard
+ Variable                     Estimate           Error      t-value
+ ------------------------------------------------------------------------------
+ Constant                       0.0563         0.00680         8.29
+
+ Automatically Identified Outliers
+   LS2016.Jul                  -0.0996         0.02295        -4.34
+   LS2018.Sep                  -0.1388         0.02068        -6.71
+ ------------------------------------------------------------------------------
+
+
+ ARIMA Model:  (0 0 0)(0 1 1)
+   Seasonal differences:    1
+                                              Standard
+ Parameter                    Estimate          Errors
+ -----------------------------------------------------
+ Seasonal MA                                       
+   Lag 12                       0.9999         0.12669
+
+ Variance                       0.24156E-02
+ SE of Var                      0.41735E-03
+ -----------------------------------------------------
+
+ Likelihood Statistics
+ ------------------------------------------------------------------
+ Number of observations (nobs)                                   79
+ Effective number of observations (nefobs)                       67
+ Number of parameters estimated (np)                              5
+ Log likelihood                                             95.5102
+ Transformation Adjustment                               -1027.4753
+ Adjusted Log likelihood (L)                              -931.9652
+ AIC                                                      1873.9303 
+ AICC (F-corrected-AIC)                                   1874.9139 
+ Hannan Quinn                                             1878.2923 
+ BIC                                                      1884.9538 
+ ------------------------------------------------------------------
+
+ QS Statistic for regARIMA Model Residuals (full series):             0.00
+                                                       (P-Value =     1.0000)
+      10*LOG(SPECTRUM) of the regARIMA model residuals
+      Spectrum estimated from 2013.Jan to 2019.Jul.
+ ++++++++++I+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++I
+     -18.23I                                 *                           I    -18.23
+           I                                 *                           I
+           I                                 *                           I
+           I                                 *                           I
+     -20.23I                                 *                           I    -20.23
+           I                                 *                           I
+           I                        **       *                           I
+           I                        **       *                           I
+     -22.22I                        **       *                           I    -22.22
+           I       *               ***       *                           I
+           I       *               ****      *                           I
+           I       *               ****      *                           I
+     -24.21I    *  *               ****      *                           I    -24.21
+           I    * **               ****      *                     *     I
+           I   ** **               ****      *                     *     I
+           I   ** **               *****     **            *       **    I
+     -26.21I   ** **               *****     **  *         *       **    I    -26.21
+           I   ** **               *****     **  *         *       **    I
+           I   ******              *****    ***  *         *      ***    I
+           I   ******      *      *******   *** **         *      ***    I
+     -28.20I   ****** S   **      *******   *** **        **     ****    I    -28.20
+           I   *******S*  ***     *******   *** **        ***    ****    I
+           I   *******S*  ***     ********  ******        ***    ****    I
+           I   *******S*******    ********  ******    T*  ***   T****    I
+     -30.19I   *******S*******    ********S*******    T*  ****  T****    I    -30.19
+           I   *******S*******    ********S*******    T*  ****S*T****    I
+           I   *******S********  *********S*******    T*  ****S*T****    I
+           I   *******S********  *********S*******    T*  ****S*T****    I
+     -32.19I   *******S********  *********S********   T* *****S*T****    I    -32.19
+           I   *******S*********S*********S********   T*******S*T****    I
+           I   *******S*********S*********S********   T*******S*T****    I
+           I  ********S*********S*********S********   T*******S*T****    I
+     -34.18I  ********S*********S*********S********  *T*******S*T****    I    -34.18
+           I  ********S*********S*********S********  *T*******S*T****    I
+           I  ********S*********S*********S********  *T*******S*T*****   I
+           I  ********S*********S*********S*********S*T*******S*T*****   I
+     -36.18I  ********S*********S*********S*********S*T*******S*T*****   I    -36.18
+           I  ********S*********S*********S*********S*T*******S*T*****   I
+           I  ********S*********S*********S*********S*T*******S*T*****   I
+           I *********S*********S*********S*********S*T*******S*T*****   I
+     -38.17I *********S*********S*********S*********S*T*******S*T*****   I    -38.17
+           I**********S*********S*********S*********S*T*******S*T*****   I
+           I**********S*********S*********S*********S*T*******S*T*****   I
+           I**********S*********S*********S*********S*T*******S*T*****   I
+     -40.16I**********S*********S*********S*********S*T*******S*T*****   I    -40.16
+           I**********S*********S*********S*********S*T*******S*T******  I
+           I**********S*********S*********S*********S*T*******S*T******  I
+           I**********S*********S*********S*********S*T*******S*T******  I
+     -42.16I**********S*********S*********S*********S*T*******S*T******  I    -42.16
+           I**********S*********S*********S*********S*T*******S*T******  I
+           I**********S*********S*********S*********S*T*******S*T******  I
+           I**********S*********S*********S*********S*T*******S*T******* I
+     -44.15I**********S*********S*********S*********S*T*******S*T*******SI    -44.15
+ ++++++++++I+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++I
+            S=SEASONAL FREQUENCIES, T=TRADING DAY FREQUENCIES
+
+
+ FORECASTING
+  Origin  2019.Jul
+  Number        12
+
+  Forecasts and Standard Errors of the Transformed Data
+   ------------------------------
+                         Standard
+       Date   Forecast      Error
+   ------------------------------
+   2019.Aug      15.39      0.052
+   2019.Sep      15.26      0.051
+   2019.Oct      15.24      0.051
+   2019.Nov      15.21      0.051
+   2019.Dec      15.46      0.051
+   2020.Jan      15.53      0.052
+   2020.Feb      15.37      0.052
+   2020.Mar      15.28      0.052
+   2020.Apr      15.18      0.052
+   2020.May      15.33      0.052
+   2020.Jun      15.48      0.052
+   2020.Jul      15.59      0.052
+   ------------------------------
+
+  Confidence intervals with coverage probability ( 0.95000
+  On the Original Scale
+   ------------------------------------------
+       Date       Lower   Forecast      Upper
+   ------------------------------------------
+   2019.Aug  4374457.22 4842562.18 5360758.45
+   2019.Sep  3827081.67 4231328.31 4678274.68
+   2019.Oct  3756315.02 4153086.72 4591768.60
+   2019.Nov  3657850.20 4044221.27 4471403.91
+   2019.Dec  4686666.38 5181709.15 5729042.26
+   2020.Jan  5015659.01 5548920.93 6138878.96
+   2020.Feb  4258149.03 4710872.94 5211730.20
+   2020.Mar  3927216.66 4344756.04 4806687.95
+   2020.Apr  3535583.66 3911484.84 4327351.62
+   2020.May  4119501.53 4557484.52 5042033.61
+   2020.Jun  4781872.27 5290278.13 5852737.40
+   2020.Jul  5305454.43 5874973.01 6505627.05
+   ------------------------------------------
+        Residencial            PAGE   4, SERIES Residencial
+  
+ A 8  RegARIMA combined outlier component
+      (LS outliers included)
+  From  2013.Jan to 2019.Jul
+  Observations         79
+ ------------------------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+                  May          Jun          Jul          Aug 
+                  Sep          Oct          Nov          Dec            AVGE  
+ ------------------------------------------------------------------------------
+  2013           126.9        126.9        126.9        126.9
+                 126.9        126.9        126.9        126.9
+                 126.9        126.9        126.9        126.9            126.9
+ 
+  2014           126.9        126.9        126.9        126.9
+                 126.9        126.9        126.9        126.9
+                 126.9        126.9        126.9        126.9            126.9
+ 
+  2015           126.9        126.9        126.9        126.9
+                 126.9        126.9        126.9        126.9
+                 126.9        126.9        126.9        126.9            126.9
+ 
+  2016           126.9        126.9        126.9        126.9
+                 126.9        126.9        114.9        114.9
+                 114.9        114.9        114.9        114.9            120.9
+ 
+  2017           114.9        114.9        114.9        114.9
+                 114.9        114.9        114.9        114.9
+                 114.9        114.9        114.9        114.9            114.9
+ 
+  2018           114.9        114.9        114.9        114.9
+                 114.9        114.9        114.9        114.9
+                 100.0        100.0        100.0        100.0            109.9
+ 
+  2019           100.0        100.0        100.0        100.0
+                 100.0        100.0        100.0             
+                                                                         100.0
+ 
+  AVGE           119.6        119.6        119.6        119.6
+                 119.6        119.6        117.9        120.9
+                 118.4        118.4        118.4        118.4
+
+  Table Total-          9417.57   Mean-         119.21   Std. Dev.-          21.40
+                                  Min -         100.00        Max -         126.92
+
+ A 8.A  RegARIMA outlier component
+  From  2019.Aug to 2020.Jul
+  Observations         12
+ ------------------------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+                  May          Jun          Jul          Aug 
+                  Sep          Oct          Nov          Dec            AVGE  
+ ------------------------------------------------------------------------------
+  2019                                                       
+                                                        100.0
+                 100.0        100.0        100.0        100.0            100.0
+ 
+  2020           100.0        100.0        100.0        100.0
+                 100.0        100.0        100.0             
+                                                                         100.0
+ 
+        Residencial            PAGE   5, SERIES Residencial
+  
+ B 1  Original series (prior adjusted)
+      (adjusted for regARIMA factors)
+  From  2013.Jan to 2019.Jul
+  Observations         79
+ ------------------------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+                  May          Jun          Jul          Aug 
+                  Sep          Oct          Nov          Dec           TOTAL  
+ ------------------------------------------------------------------------------
+  2013        3575956.     3121512.     2846643.     2552389.
+              3088406.     3474367.     4009353.     3768333.
+              3208972.     2950368.     2900145.     4206443.        39702887.
+ 
+  2014        4216161.     3060124.     2889218.     2790959.
+              3295488.     3774692.     4030969.     3510156.
+              2952304.     3298702.     3095454.     3619903.        40534131.
+ 
+  2015        4015586.     3496933.     3800925.     2960119.
+              3328726.     3893355.     4343958.     3780232.
+              3427879.     3437258.     3090952.     4094431.        43670353.
+ 
+  2016        4452915.     3949807.     3168503.     3233782.
+              3893211.     4439297.     4862335.     4065174.
+              3755791.     3439532.     3437241.     4469391.        47166978.
+ 
+  2017        4937794.     4019725.     3891331.     3267786.
+              3937732.     4509205.     4752945.     4149528.
+              3671200.     3463975.     3512458.     4540341.        48654021.
+ 
+  2018        4759741.     4320498.     3910656.     3554828.
+              3727664.     4865303.     5390511.     4684276.
+              3927008.     3944427.     4001431.     4687693.        51774037.
+ 
+  2019        5280299.     4641198.     4004709.     3652725.
+              4356837.     4816838.     5704951.             
+                                                                     32457557.
+ 
+  AVGE        4462636.     3801400.     3501712.     3144655.
+              3661152.     4253294.     4727860.     3992950.
+              3490526.     3422377.     3339614.     4269700.
+
+  Table Total-     303959963.92   Mean-     3847594.48   Std. Dev.-      657480.89
+                                  Min -     2552389.39        Max -     5704951.02
+
+ B 1.A  Forecasts of (prior adjusted) original series
+  From  2019.Aug to 2020.Jul
+  Observations         12
+ ------------------------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+                  May          Jun          Jul          Aug 
+                  Sep          Oct          Nov          Dec           TOTAL  
+ ------------------------------------------------------------------------------
+  2019                                                       
+                                                     4842562.
+              4231328.     4153087.     4044221.     5181709.        22452908.
+ 
+  2020        5548921.     4710873.     4344756.     3911485.
+              4557485.     5290278.     5874973.             
+                                                                     34238770.
+ 
+        Residencial            PAGE   6, SERIES Residencial
+
+ C 17  Final weights for irregular component
+  From  2013.Jan to 2019.Jul
+  Observations         79
+  Lower sigma limit    1.50
+  Upper sigma limit    2.50
+ ------------------------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+                  May          Jun          Jul          Aug 
+                  Sep          Oct          Nov          Dec            S.D.  
+ ------------------------------------------------------------------------------
+  2013           100.0        100.0        100.0        100.0
+                 100.0        100.0        100.0         65.7
+                 100.0        100.0        100.0          0.0              3.2
+ 
+  2014           100.0          0.0         23.6        100.0
+                 100.0        100.0        100.0        100.0
+                  95.3          0.0         37.6        100.0              3.2
+ 
+  2015           100.0        100.0          0.0        100.0
+                 100.0        100.0        100.0        100.0
+                 100.0         96.1        100.0        100.0              3.2
+ 
+  2016           100.0        100.0          0.0        100.0
+                 100.0        100.0        100.0        100.0
+                 100.0        100.0        100.0        100.0              3.2
+ 
+  2017           100.0        100.0         65.6        100.0
+                 100.0        100.0        100.0        100.0
+                 100.0        100.0        100.0        100.0              2.1
+ 
+  2018           100.0        100.0        100.0        100.0
+                   0.0        100.0        100.0        100.0
+                 100.0        100.0         68.4         47.1              2.0
+ 
+  2019           100.0        100.0         98.7        100.0
+                 100.0         30.2        100.0             
+                                                                           2.0
+ 
+        Residencial            PAGE   7, SERIES Residencial
+
+ D 8  Final unmodified SI ratios
+  From  2013.Jan to 2019.Jul
+  Observations         79
+ ------------------------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+                  May          Jun          Jul          Aug 
+                  Sep          Oct          Nov          Dec            AVGE  
+ ------------------------------------------------------------------------------
+  2013           118.0        101.7         91.4         80.7
+                  96.3        106.7        121.4        112.6
+                  94.8         86.4         84.4        122.1            101.4
+ 
+  2014           122.5         89.2         84.6         82.1
+                  97.4        112.1        120.0        104.6
+                  87.9         98.0         91.6        106.6             99.7
+ 
+  2015           117.5        101.6        109.5         84.5
+                  94.1        108.9        120.4        103.7
+                  93.1         92.4         82.3        107.9            101.3
+ 
+  2016           116.3        102.2         81.3         82.4
+                  98.6        111.7        121.6        101.2
+                  93.1         85.0         84.8        110.1             99.0
+ 
+  2017           121.7         99.1         96.1         80.9
+                  97.8        112.2        118.5        103.4
+                  91.3         85.7         86.3        110.5            100.3
+ 
+  2018           114.7        102.9         92.1         82.8
+                  85.9        111.2        122.3        105.7
+                  88.3         88.4         89.6        104.9             99.1
+ 
+  2019           118.0        103.5         89.1         80.9
+                  96.0        105.6        124.2             
+                                                                         102.5
+ 
+  AVGE           118.4        100.0         92.0         82.0
+                  95.1        109.8        121.2        105.2
+                  91.4         89.3         86.5        110.4
+
+  Table Total-          7926.57   Mean-         100.34   Std. Dev.-          13.04
+                                  Min -          80.72        Max -         124.23
+        Residencial            PAGE   8, SERIES Residencial
+
+ D 8.A  F-tests for seasonality
+
+    Test for the presence of seasonality assuming stability.
+
+                           Sum of     Dgrs.of         Mean
+                          Squares     Freedom        Square       F-Value
+    Between months       12058.0930       11       1096.19027      53.437**
+          Residual        1374.4198       67         20.51373
+             Total       13432.5128       78
+
+            **Seasonality present at the 0.1 per cent level.
+
+
+  Nonparametric Test for the Presence of Seasonality Assuming Stability
+
+                 Kruskal-Wallis      Degrees of    Probability
+                   Statistic        Freedom         Level
+
+                      69.1767          11            0.000%
+
+            Seasonality present at the one percent level.
+
+
+  Moving Seasonality Test
+                         Sum of     Dgrs.of         Mean
+                        Squares     Freedom        Square       F-value
+   Between Years          30.6596        5         6.131919       0.385  
+           Error         876.0486       55        15.928157
+
+            No evidence of moving seasonality at the five percent level.
+
+
+  COMBINED TEST FOR THE PRESENCE OF IDENTIFIABLE SEASONALITY
+
+
+            IDENTIFIABLE SEASONALITY PRESENT
+        Residencial            PAGE   9, SERIES Residencial
+
+ D 8.B  Final unmodified SI ratios, with labels for outliers and extreme values
+  From  2013.Jan to 2019.Jul
+  Observations         79
+ -----------------------------------------------------------------
+                  Jan           Feb           Mar           Apr  
+                  May           Jun           Jul           Aug  
+                  Sep           Oct           Nov           Dec  
+ -----------------------------------------------------------------
+  2013          118.0         101.7          91.4          80.7  
+                 96.3         106.7         121.4         112.6* 
+                 94.8          86.4          84.4         122.1* 
+ 
+  2014          122.5          89.2*         84.6*         82.1  
+                 97.4         112.1         120.0         104.6  
+                 87.9*         98.0*         91.6*        106.6  
+ 
+  2015          117.5         101.6         109.5*         84.5  
+                 94.1         108.9         120.4         103.7  
+                 93.1          92.4*         82.3         107.9  
+ 
+  2016          116.3         102.2 -        81.3*-        82.4 -
+                 98.6 -       111.7 -       121.6#        101.2 -
+                 93.1 -        85.0 -        84.8 -       110.1 -
+ 
+  2017          121.7          99.1          96.1*         80.9  
+                 97.8         112.2         118.5         103.4  
+                 91.3          85.7          86.3         110.5  
+ 
+  2018          114.7         102.9          92.1          82.8 -
+                 85.9*-       111.2 -       122.3 -       105.7 -
+                 88.3#         88.4 -        89.6*-       104.9*-
+ 
+  2019          118.0 -       103.5 -        89.1*         80.9  
+                 96.0         105.6*        124.2                
+                                                                 
+ 
+
+  Key to symbols:
+    *  : extreme value as determined by X-11 extreme value procedure
+    #  : regARIMA outlier (either AO, LS, TC, or Ramp)
+    -  : values around a level shift most likely to be influenced by it
+ 
+        Residencial            PAGE  10, SERIES Residencial
+
+ D 9  Final replacement values for SI ratios
+  From  2013.Jan to 2019.Jul
+  Observations         79
+ -------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+                  May          Jun          Jul          Aug 
+                  Sep          Oct          Nov          Dec 
+ -------------------------------------------------------------
+  2013    ************ ************ ************ ************
+          ************ ************ ************        110.4
+          ************ ************ ************        108.8
+ 
+  2014    ************         99.9         89.6 ************
+          ************ ************ ************ ************
+                  88.1         89.1         88.0 ************
+ 
+  2015    ************ ************         93.0 ************
+          ************ ************ ************ ************
+          ************         92.2 ************ ************
+ 
+  2016    ************ ************         92.2 ************
+          ************ ************ ************ ************
+          ************ ************ ************ ************
+ 
+  2017    ************ ************         94.9 ************
+          ************ ************ ************ ************
+          ************ ************ ************ ************
+ 
+  2018    ************ ************ ************ ************
+                  96.1 ************ ************ ************
+          ************ ************         88.6        107.2
+ 
+  2019    ************ ************         89.1 ************
+          ************        108.9 ************             
+                                                             
+ 
+
+ D 9.A  Moving seasonality ratio
+ -------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+
+ -------------------------------------------------------------
+   I             3.454        1.739        2.619        2.190
+
+   S             0.330        0.249        0.335        0.273
+
+ RATIO          10.475        6.972        7.813        8.019
+
+
+
+
+ -------------------------------------------------------------
+                  May          Jun          Jul          Aug 
+
+ -------------------------------------------------------------
+   I             2.020        2.219        1.462        2.688
+
+   S             0.177        0.330        0.261        0.507
+
+ RATIO          11.433        6.733        5.603        5.302
+
+
+
+
+ -------------------------------------------------------------
+                  Sep          Oct          Nov          Dec 
+
+ -------------------------------------------------------------
+   I             3.751        3.902        3.672        1.865
+
+   S             0.497        0.418        0.453        0.278
+
+ RATIO           7.556        9.332        8.114        6.704
+
+
+
+
+        Residencial            PAGE  11, SERIES Residencial
+
+ D 10  Final seasonal factors
+  From  2013.Jan to 2019.Jul
+  Observations         79
+  Seasonal filter    3 x 9 moving average
+ ------------------------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+                  May          Jun          Jul          Aug 
+                  Sep          Oct          Nov          Dec            AVGE  
+ ------------------------------------------------------------------------------
+  2013          118.84       101.13        91.88        82.18
+                 96.63       110.02       120.61       105.17
+                 91.95        87.92        85.26       108.45           100.00
+ 
+  2014          118.70       101.18        91.96        82.14
+                 96.65       110.16       120.69       105.02
+                 91.72        87.88        85.49       108.57           100.01
+ 
+  2015          118.47       101.33        91.86        82.13
+                 96.58       110.19       120.99       104.81
+                 91.38        87.98        85.81       108.76           100.02
+ 
+  2016          118.27       101.30        91.72        82.05
+                 96.45       110.27       121.34       104.80
+                 91.36        87.96        85.78       108.73           100.00
+ 
+  2017          118.25       101.30        91.72        82.05
+                 96.45       110.27       121.35       104.82
+                 91.38        87.96        85.78       108.72           100.00
+ 
+  2018          117.95       101.34        91.85        82.18
+                 96.43       110.59       121.58       104.13
+                 91.01        88.07        86.01       108.95           100.01
+ 
+  2019          117.73       101.41        91.90        82.11
+                 96.45       110.69       121.77             
+                                                                        103.15
+ 
+  AVGE          118.32       101.29        91.84        82.12
+                 96.52       110.31       121.19       104.79
+                 91.47        87.96        85.69       108.70
+
+  Table Total-          7922.71   Mean-         100.29   Std. Dev.-          12.41
+                                  Min -          82.05        Max -         121.77
+
+ D 10.A  Final seasonal component forecasts
+  From  2019.Aug to 2020.Jul
+  Observations         12
+ ------------------------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+                  May          Jun          Jul          Aug 
+                  Sep          Oct          Nov          Dec            AVGE  
+ ------------------------------------------------------------------------------
+  2019                                                       
+                                                       103.95
+                 90.91        87.89        86.18       109.14            95.61
+ 
+  2020          117.66       101.44        91.87        81.97
+                 96.41       110.69       121.97             
+                                                                        103.15
+ 
+        Residencial            PAGE  12, SERIES Residencial
+
+ D 11  Final seasonally adjusted data
+  From  2013.Jan to 2019.Jul
+  Observations         79
+ ------------------------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+                  May          Jun          Jul          Aug 
+                  Sep          Oct          Nov          Dec           TOTAL  
+ ------------------------------------------------------------------------------
+  2013        3818944.     3917263.     3932181.     3941972.
+              4056357.     4008034.     4219034.     4547527.
+              4429249.     4258825.     4317251.     4922546.        50369182.
+ 
+  2014        4508125.     3838438.     3987454.     4312397.
+              4327566.     4348880.     4239050.     4241934.
+              4085235.     4763849.     4595440.     4231547.        51479915.
+ 
+  2015        4301830.     4379800.     5251699.     4574552.
+              4374425.     4484275.     4556812.     4577408.
+              4760870.     4958504.     4571805.     4777864.        55569843.
+ 
+  2016        4778353.     4948661.     4384186.     5001758.
+              5123192.     5109391.     4604014.     4456675.
+              4722977.     4492793.     4603726.     4722766.        56948493.
+ 
+  2017        4797277.     4559025.     4874127.     4575403.
+              4690753.     4698062.     4499923.     4548198.
+              4615902.     4524378.     4704186.     4797942.        55885177.
+ 
+  2018        4636208.     4898285.     4891346.     4969492.
+              4441135.     5054416.     5093916.     5168209.
+              4314683.     4478861.     4652060.     4302548.        56901161.
+ 
+  2019        4485081.     4576494.     4357587.     4448785.
+              4517256.     4351465.     4685038.             
+                                                                     31421706.
+ 
+  AVGE        4475117.     4445424.     4525512.     4546337.
+              4504383.     4579217.     4556827.     4589992.
+              4488153.     4579535.     4574078.     4625869.
+
+  Table Total-     358575477.28   Mean-     4538930.09   Std. Dev.-      320173.56
+                                  Min -     3818943.85        Max -     5251699.43
+
+                    Test for the presence of residual seasonality.
+
+       No evidence of residual seasonality in the entire series at the
+            1 per cent level.  F =      0.20
+
+       No evidence of residual seasonality in the last 3 years at the
+            1 per cent level.  F =      0.76
+
+       No evidence of residual seasonality in the last 3 years at the
+            5 per cent level.
+
+ Note: sudden large changes in the level of the adjusted series will
+       invalidate the results of this test for the last three year period.
+        Residencial            PAGE  13, SERIES Residencial
+  
+ D 12  Final trend cycle
+       (LS outliers included)
+  From  2013.Jan to 2019.Jul
+  Observations         79
+  Trend filter    23-term Henderson moving average
+  I/C ratio        3.87
+ ------------------------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+                  May          Jun          Jul          Aug 
+                  Sep          Oct          Nov          Dec           TOTAL  
+ ------------------------------------------------------------------------------
+  2013        3843083.     3893307.     3955094.     4015410.
+              4076040.     4138389.     4199713.     4255680.
+              4303625.     4340470.     4363899.     4371880.        49756590.
+ 
+  2014        4366754.     4352560.     4332837.     4311312.
+              4290865.     4274666.     4264738.     4261204.
+              4264447.     4274756.     4290967.     4312978.        51598083.
+ 
+  2015        4340413.     4373211.     4410896.     4451668.
+              4493666.     4535774.     4578111.     4621813.
+              4668348.     4717056.     4767056.     4817779.        54775792.
+ 
+  2016        4867684.     4913694.     4954805.     4989975.
+              5020392.     5047318.     4590031.     4608424.
+              4624603.     4638256.     4650122.     4660250.        57565555.
+ 
+  2017        4666091.     4666893.     4661495.     4650488.
+              4635641.     4620319.     4608959.     4605813.
+              4613839.     4635104.     4670103.     4715423.        55750168.
+ 
+  2018        4768127.     4825052.     4882486.     4937228.
+              4987496.     5030780.     5066392.     5093676.
+              4449769.     4459589.     4464930.     4468025.        57433551.
+ 
+  2019        4471784.     4479040.     4491424.     4509989.
+              4534145.     4562654.     4593283.             
+                                                                     31642318.
+ 
+  AVGE        4474848.     4500537.     4527005.     4552296.
+              4576892.     4601414.     4557318.     4574435.
+              4487439.     4510872.     4534513.     4557723.
+
+  Table Total-     358522056.79   Mean-     4538253.88   Std. Dev.-      275910.38
+                                  Min -     3843082.83        Max -     5093676.00
+        Residencial            PAGE  14, SERIES Residencial
+
+ D 13  Final irregular component
+  From  2013.Jan to 2019.Jul
+  Observations         79
+ ------------------------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+                  May          Jun          Jul          Aug 
+                  Sep          Oct          Nov          Dec            S.D.  
+ ------------------------------------------------------------------------------
+  2013            99.4        100.6         99.4         98.2
+                  99.5         96.9        100.5        106.9
+                 102.9         98.1         98.9        112.6              4.4
+ 
+  2014           103.2         88.2         92.0        100.0
+                 100.9        101.7         99.4         99.5
+                  95.8        111.4        107.1         98.1              5.9
+ 
+  2015            99.1        100.2        119.1        102.8
+                  97.3         98.9         99.5         99.0
+                 102.0        105.1         95.9         99.2              6.0
+ 
+  2016            98.2        100.7         88.5        100.2
+                 102.0        101.2        100.3         96.7
+                 102.1         96.9         99.0        101.3              3.8
+ 
+  2017           102.8         97.7        104.6         98.4
+                 101.2        101.7         97.6         98.7
+                 100.0         97.6        100.7        101.7              2.2
+ 
+  2018            97.2        101.5        100.2        100.7
+                  89.0        100.5        100.5        101.5
+                  97.0        100.4        104.2         96.3              3.8
+ 
+  2019           100.3        102.2         97.0         98.6
+                  99.6         95.4        102.0             
+                                                                           2.4
+ 
+  S.D.             2.1          4.7          9.2          1.5
+                   4.4          2.4          1.2          3.2
+                   2.7          5.4          3.8          5.5
+
+  Table Total-          7903.52   Mean-         100.04   Std. Dev.-           4.39
+                                  Min -          88.19        Max -         119.06
+        Residencial            PAGE  15, SERIES Residencial
+
+ D 16  Combined adjustment factors
+  From  2013.Jan to 2019.Jul
+  Observations         79
+ ------------------------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+                  May          Jun          Jul          Aug 
+                  Sep          Oct          Nov          Dec            AVGE  
+ ------------------------------------------------------------------------------
+  2013          118.84       101.13        91.88        82.18
+                 96.63       110.02       120.61       105.17
+                 91.95        87.92        85.26       108.45           100.00
+ 
+  2014          118.70       101.18        91.96        82.14
+                 96.65       110.16       120.69       105.02
+                 91.72        87.88        85.49       108.57           100.01
+ 
+  2015          118.47       101.33        91.86        82.13
+                 96.58       110.19       120.99       104.81
+                 91.38        87.98        85.81       108.76           100.02
+ 
+  2016          118.27       101.30        91.72        82.05
+                 96.45       110.27       121.34       104.80
+                 91.36        87.96        85.78       108.73           100.00
+ 
+  2017          118.25       101.30        91.72        82.05
+                 96.45       110.27       121.35       104.82
+                 91.38        87.96        85.78       108.72           100.00
+ 
+  2018          117.95       101.34        91.85        82.18
+                 96.43       110.59       121.58       104.13
+                 91.01        88.07        86.01       108.95           100.01
+ 
+  2019          117.73       101.41        91.90        82.11
+                 96.45       110.69       121.77             
+                                                                        103.15
+ 
+  AVGE          118.32       101.29        91.84        82.12
+                 96.52       110.31       121.19       104.79
+                 91.47        87.96        85.69       108.70
+
+  Table Total-          7922.71   Mean-         100.29   Std. Dev.-          12.41
+                                  Min -          82.05        Max -         121.77
+
+ D 16.A  Combined adjustment component forecasts
+  From  2019.Aug to 2020.Jul
+  Observations         12
+ ------------------------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+                  May          Jun          Jul          Aug 
+                  Sep          Oct          Nov          Dec            AVGE  
+ ------------------------------------------------------------------------------
+  2019                                                       
+                                                       103.95
+                 90.91        87.89        86.18       109.14            95.61
+ 
+  2020          117.66       101.44        91.87        81.97
+                 96.41       110.69       121.97             
+                                                                        103.15
+ 
+        Residencial            PAGE  16, SERIES Residencial
+
+ E 4  Ratios of annual totals
+  From          2013 to 2018
+  Observations          6
+ -----------------------------------
+  Year      Unmodified     Modified
+                 (D11)         (E3)
+ -----------------------------------
+  2013          100.04        99.95
+ 
+  2014           99.93       100.06
+ 
+  2015           99.74        99.86
+ 
+  2016          100.04        99.96
+ 
+  2017          100.02       100.02
+ 
+  2018          100.20       100.17
+ 
+        Residencial            PAGE  17, SERIES Residencial
+
+ E 5  Month-to-month percent change in the original series
+  From  2013.Feb to 2019.Jul
+  Observations         78
+ ------------------------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+                  May          Jun          Jul          Aug 
+                  Sep          Oct          Nov          Dec            AVGE  
+ ------------------------------------------------------------------------------
+  2013                        -12.7         -8.8        -10.3
+                  21.0         12.5         15.4         -6.0
+                 -14.8         -8.1         -1.7         45.0              2.9
+ 
+  2014             0.2        -27.4         -5.6         -3.4
+                  18.1         14.5          6.8        -12.9
+                 -15.9         11.7         -6.2         16.9             -0.3
+ 
+  2015            10.9        -12.9          8.7        -22.1
+                  12.5         17.0         11.6        -13.0
+                  -9.3          0.3        -10.1         32.5              2.2
+ 
+  2016             8.8        -11.3        -19.8          2.1
+                  20.4         14.0         -0.8        -16.4
+                  -7.6         -8.4         -0.1         30.0              0.9
+ 
+  2017            10.5        -18.6         -3.2        -16.0
+                  20.5         14.5          5.4        -12.7
+                 -11.5         -5.6          1.4         29.3              1.2
+ 
+  2018             4.8         -9.2         -9.5         -9.1
+                   4.9         30.5         10.8        -13.1
+                 -27.0          0.4          1.4         17.2              0.2
+ 
+  2019            12.6        -12.1        -13.7         -8.8
+                  19.3         10.6         18.4             
+                                                                           3.8
+ 
+  AVGE             8.0        -14.9         -7.4         -9.7
+                  16.7         16.2          9.6        -12.4
+                 -14.4         -1.6         -2.5         28.5
+
+  Table Total-           107.48   Mean-           1.38   Std. Dev.-          15.05
+                                  Min -         -27.42        Max -          45.04
+        Residencial            PAGE  18, SERIES Residencial
+
+ E 6  Month-to-month percent change in seasonally adjusted series (D11)
+  From  2013.Feb to 2019.Jul
+  Observations         78
+ ------------------------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+                  May          Jun          Jul          Aug 
+                  Sep          Oct          Nov          Dec            AVGE  
+ ------------------------------------------------------------------------------
+  2013                          2.6          0.4          0.2
+                   2.9         -1.2          5.3          7.8
+                  -2.6         -3.8          1.4         14.0              2.4
+ 
+  2014            -8.4        -14.9          3.9          8.1
+                   0.4          0.5         -2.5          0.1
+                  -3.7         16.6         -3.5         -7.9             -0.9
+ 
+  2015             1.7          1.8         19.9        -12.9
+                  -4.4          2.5          1.6          0.5
+                   4.0          4.2         -7.8          4.5              1.3
+ 
+  2016             0.0          3.6        -11.4         14.1
+                   2.4         -0.3         -9.9         -3.2
+                   6.0         -4.9          2.5          2.6              0.1
+ 
+  2017             1.6         -5.0          6.9         -6.1
+                   2.5          0.2         -4.2          1.1
+                   1.5         -2.0          4.0          2.0              0.2
+ 
+  2018            -3.4          5.7         -0.1          1.6
+                 -10.6         13.8          0.8          1.5
+                 -16.5          3.8          3.9         -7.5             -0.6
+ 
+  2019             4.2          2.0         -4.8          2.1
+                   1.5         -3.7          7.7             
+                                                                           1.3
+ 
+  AVGE            -0.7         -0.6          2.1          1.0
+                  -0.8          1.7         -0.2          1.3
+                  -1.9          2.3          0.1          1.3
+
+  Table Total-            36.88   Mean-           0.47   Std. Dev.-           6.51
+                                  Min -         -16.51        Max -          19.91
+        Residencial            PAGE  19, SERIES Residencial
+
+ E 7  Month-to-month percent change in final trend cycle (D12)
+  From  2013.Feb to 2019.Jul
+  Observations         78
+ ------------------------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+                  May          Jun          Jul          Aug 
+                  Sep          Oct          Nov          Dec            AVGE  
+ ------------------------------------------------------------------------------
+  2013                          1.3          1.6          1.5
+                   1.5          1.5          1.5          1.3
+                   1.1          0.9          0.5          0.2              1.2
+ 
+  2014            -0.1         -0.3         -0.5         -0.5
+                  -0.5         -0.4         -0.2         -0.1
+                   0.1          0.2          0.4          0.5             -0.1
+ 
+  2015             0.6          0.8          0.9          0.9
+                   0.9          0.9          0.9          1.0
+                   1.0          1.0          1.1          1.1              0.9
+ 
+  2016             1.0          0.9          0.8          0.7
+                   0.6          0.5         -9.1          0.4
+                   0.4          0.3          0.3          0.2             -0.2
+ 
+  2017             0.1          0.0         -0.1         -0.2
+                  -0.3         -0.3         -0.2         -0.1
+                   0.2          0.5          0.8          1.0              0.1
+ 
+  2018             1.1          1.2          1.2          1.1
+                   1.0          0.9          0.7          0.5
+                 -12.6          0.2          0.1          0.1             -0.4
+ 
+  2019             0.1          0.2          0.3          0.4
+                   0.5          0.6          0.7             
+                                                                           0.4
+ 
+  AVGE             0.5          0.6          0.6          0.6
+                   0.5          0.5         -0.8          0.5
+                  -1.7          0.5          0.5          0.5
+
+  Table Total-            19.37   Mean-           0.25   Std. Dev.-           1.92
+                                  Min -         -12.64        Max -           1.59
+        Residencial            PAGE  20, SERIES Residencial
+
+ E 8  Month-to-month percent change in original series adjusted for calendar factors (A18)
+  From  2013.Feb to 2019.Jul
+  Observations         78
+ ------------------------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+                  May          Jun          Jul          Aug 
+                  Sep          Oct          Nov          Dec            AVGE  
+ ------------------------------------------------------------------------------
+  2013                        -12.7         -8.8        -10.3
+                  21.0         12.5         15.4         -6.0
+                 -14.8         -8.1         -1.7         45.0              2.9
+ 
+  2014             0.2        -27.4         -5.6         -3.4
+                  18.1         14.5          6.8        -12.9
+                 -15.9         11.7         -6.2         16.9             -0.3
+ 
+  2015            10.9        -12.9          8.7        -22.1
+                  12.5         17.0         11.6        -13.0
+                  -9.3          0.3        -10.1         32.5              2.2
+ 
+  2016             8.8        -11.3        -19.8          2.1
+                  20.4         14.0         -0.8        -16.4
+                  -7.6         -8.4         -0.1         30.0              0.9
+ 
+  2017            10.5        -18.6         -3.2        -16.0
+                  20.5         14.5          5.4        -12.7
+                 -11.5         -5.6          1.4         29.3              1.2
+ 
+  2018             4.8         -9.2         -9.5         -9.1
+                   4.9         30.5         10.8        -13.1
+                 -27.0          0.4          1.4         17.2              0.2
+ 
+  2019            12.6        -12.1        -13.7         -8.8
+                  19.3         10.6         18.4             
+                                                                           3.8
+ 
+  AVGE             8.0        -14.9         -7.4         -9.7
+                  16.7         16.2          9.6        -12.4
+                 -14.4         -1.6         -2.5         28.5
+
+  Table Total-           107.48   Mean-           1.38   Std. Dev.-          15.05
+                                  Min -         -27.42        Max -          45.04
+        Residencial            PAGE  21, SERIES Residencial
+
+ E 18  Final adjustment ratios
+  From  2013.Jan to 2019.Jul
+  Observations         79
+ ------------------------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+                  May          Jun          Jul          Aug 
+                  Sep          Oct          Nov          Dec            AVGE  
+ ------------------------------------------------------------------------------
+  2013           118.8        101.1         91.9         82.2
+                  96.6        110.0        120.6        105.2
+                  91.9         87.9         85.3        108.5            100.0
+ 
+  2014           118.7        101.2         92.0         82.1
+                  96.6        110.2        120.7        105.0
+                  91.7         87.9         85.5        108.6            100.0
+ 
+  2015           118.5        101.3         91.9         82.1
+                  96.6        110.2        121.0        104.8
+                  91.4         88.0         85.8        108.8            100.0
+ 
+  2016           118.3        101.3         91.7         82.1
+                  96.4        110.3        121.3        104.8
+                  91.4         88.0         85.8        108.7            100.0
+ 
+  2017           118.3        101.3         91.7         82.1
+                  96.4        110.3        121.3        104.8
+                  91.4         88.0         85.8        108.7            100.0
+ 
+  2018           118.0        101.3         91.9         82.2
+                  96.4        110.6        121.6        104.1
+                  91.0         88.1         86.0        109.0            100.0
+ 
+  2019           117.7        101.4         91.9         82.1
+                  96.4        110.7        121.8             
+                                                                         103.2
+ 
+  AVGE           118.3        101.3         91.8         82.1
+                  96.5        110.3        121.2        104.8
+                  91.5         88.0         85.7        108.7
+
+  Table Total-          7922.71   Mean-         100.29   Std. Dev.-          12.41
+                                  Min -          82.05        Max -         121.77
+
+ E 18.A  Final adjustment ratio forecasts
+  From  2019.Aug to 2020.Jul
+  Observations         12
+ ------------------------------------------------------------------------------
+                  Jan          Feb          Mar          Apr 
+                  May          Jun          Jul          Aug 
+                  Sep          Oct          Nov          Dec            AVGE  
+ ------------------------------------------------------------------------------
+  2019                                                       
+                                                        104.0
+                  90.9         87.9         86.2        109.1             95.6
+ 
+  2020           117.7        101.4         91.9         82.0
+                  96.4        110.7        122.0             
+                                                                         103.1
+ 
+        Residencial            PAGE  22, SERIES Residencial
+
+
+ F 2. Summary Measures
+   F 2.A: Average percent change without regard to sign over the
+          indicated span
+      Span
+       in      A1     D11     D13     D12     D10      A2     D18      F1
+     months    O      CI       I       C       S       P     TD&H     mcd
+        1   12.53    4.48    4.38    0.64   12.07    0.29    0.00    0.89
+        2   19.80    5.27    4.90    1.26   19.02    0.58    0.00    1.63
+        3   22.59    5.14    4.59    1.87   21.97    0.89    0.00    2.17
+        4   19.45    5.17    4.23    2.46   18.50    1.20    0.00    2.66
+        5   12.60    5.68    4.23    3.01   11.44    1.52    0.00    3.07
+        6    7.87    6.03    4.29    3.55    4.39    1.84    0.00    3.40
+        7   12.77    6.62    4.73    4.05   11.55    2.18    0.00    3.59
+        8   20.13    6.83    4.73    4.51   19.17    2.53    0.00    3.75
+        9   22.90    6.45    4.48    4.96   21.91    2.88    0.00    3.87
+       10   20.67    6.72    4.32    5.37   18.53    3.25    0.00    3.94
+       11   13.74    7.12    4.05    5.77   11.84    3.63    0.00    4.01
+       12    7.90    7.89    4.94    6.17    0.12    3.82    0.00    4.13
+
+      Span
+       in     E1      E2      E3
+     months  Mod.O   Mod.CI  Mod.I
+        1   12.09    3.09    2.95
+        2   19.37    3.44    2.97
+        3   22.41    3.38    2.70
+        4   19.32    4.01    2.93
+        5   12.22    4.22    2.65
+        6    6.51    4.62    2.35
+        7   12.38    5.61    3.13
+        8   19.59    5.57    2.68
+        9   22.97    5.51    2.50
+       10   20.40    6.21    2.80
+       11   13.36    6.37    2.23
+       12    6.91    6.90    2.99
+
+   F 2.B: Relative contributions to the variance of the percent change
+          in the components of the original series
+      Span
+       in     E3     D12     D10      A2     D18            RATIO
+     months   I       C       S       P     TD&H    TOTAL   (X100)
+        1    5.61    0.26   94.07    0.05   00.00  100.00  105.93
+        2    2.37    0.43   97.11    0.09   00.00  100.00   99.27
+        3    1.48    0.71   97.66    0.16   00.00  100.00   98.47
+        4    2.39    1.69   95.53    0.40   00.00  100.00   96.00
+        5    4.69    6.09   87.68    1.54   00.00  100.00   99.90
+        6   13.58   30.88   47.20    8.34   00.00  100.00   96.26
+        7    5.97    9.97   81.17    2.90   00.00  100.00  107.19
+        8    1.80    5.07   91.54    1.59   00.00  100.00  104.58
+        9    1.20    4.73   92.46    1.60   00.00  100.00   98.39
+       10    2.00    7.39   87.90    2.71   00.00  100.00   93.81
+       11    2.59   17.39   73.15    6.87   00.00  100.00  107.28
+       12   14.47   61.78    0.02   23.73   00.00  100.00  129.01
+
+   F 2.C: Average percent change with regard to sign and standard
+          deviation over indicated span
+      Span        A1               D13              D12
+       in          O                I                C
+     months   Avg.    S.D.     Avg.    S.D.     Avg.    S.D.
+        1     1.65   14.79     0.21    6.05     0.54    0.54
+        2     3.65   22.94     0.20    6.91     1.07    1.09
+        3     4.90   25.70     0.18    6.56     1.59    1.61
+        4     4.67   22.23     0.13    5.61     2.10    2.10
+        5     3.69   14.54     0.11    5.85     2.60    2.57
+        6     3.52    9.32     0.23    6.69     3.10    2.98
+        7     4.60   14.93     0.22    6.50     3.58    3.35
+        8     6.53   23.97     0.10    7.00     4.06    3.66
+        9     7.47   26.22     0.08    6.48     4.54    3.90
+       10     7.27   22.80     0.08    5.93     5.02    4.10
+       11     6.45   15.20     0.05    5.91     5.50    4.24
+       12     5.91    8.07     0.00    7.42     5.98    4.35
+
+      Span        D10              D11               F1
+       in          S                CI              mcd
+     months   Avg.    S.D.     Avg.    S.D.     Avg.    S.D.
+        1     0.90   13.41     0.75    6.11     0.17    1.11
+        2     2.38   21.74     1.27    7.04     0.31    1.98
+        3     3.13   24.60     1.77    6.82     0.43    2.61
+        4     2.40   20.81     2.23    6.05     0.54    3.15
+        5     0.95   12.56     2.72    6.47     0.63    3.69
+        6     0.21    5.89     3.33    7.48     0.70    4.10
+        7     0.83   13.06     3.80    7.37     0.77    4.27
+        8     2.35   22.05     4.14    7.80     0.88    4.36
+        9     2.85   24.43     4.60    7.35     1.05    4.46
+       10     2.15   20.77     5.07    6.98     1.24    4.52
+       11     0.89   12.78     5.51    6.95     1.46    4.51
+       12     0.00    0.17     5.91    8.08     1.71    4.50
+
+   F 2.D: Average duration of run        CI      I       C      mcd
+                                        1.73    1.53   15.60    3.13
+
+
+   F 2.E: I/C Ratio for months span
+
+      SPAN         1       2       3       4       5       6
+      I/C        6.88    3.89    2.45    1.72    1.40    1.21
+
+      SPAN         7       8       9      10      11      12
+      I/C        1.17    1.05    0.90    0.80    0.70    0.80
+
+         months for cyclical dominance:       9
+
+
+   F 2.F: Relative contribution of the components to the stationary
+          portion of the variance in the original series
+
+                   I       C       S       P     TD&H   Total
+                  2.61    2.17   65.30   29.30    0.00   99.38
+
+
+   F 2.G: The autocorrelation of the irregulars for spans 1 to 14
+
+      SPAN         1       2       3       4       5       6       7
+      ACF        0.05   -0.27   -0.11    0.20    0.13   -0.09   -0.03
+
+      SPAN         8       9      10      11      12      13      14
+      ACF       -0.18   -0.02    0.16    0.18   -0.40   -0.22    0.10
+
+   F 2.H: The final I/C Ratio from Table D12:        3.87
+          The final I/S Ratio from Table D10:        7.72
+
+   F 2.I:                                                    Statistic   Prob.
+                                                                         level
+    F-test for stable seasonality from Table B 1.        :     41.502    0.00%
+    F-test for stable seasonality from Table D 8.        :     53.437    0.00%
+    Kruskal-Wallis Chi Squared test
+                  for stable seasonality from Table D 8. :     69.177    0.00%
+    F-test for moving seasonality from Table D 8.        :      0.385   85.70%
+
+        Residencial            PAGE  24, SERIES Residencial
+
+
+ F 3. Monitoring and Quality Assessment Statistics
+       All the measures below are in the range from 0 to 3 with an 
+       acceptance region from 0 to 1.
+
+    1. The relative contribution of the irregular over three       M1  =  0.148
+       months span (from Table F 2.B).
+
+
+    2. The relative contribution of the irregular component        M2  =  0.370
+       to the stationary portion of the variance (from Table 
+       F 2.F).
+
+    3. The amount of month to month change in the irregular        M3  =  1.436
+       component as compared to the amount of month to month
+       change in the trend-cycle (from Table F2.H).
+
+    4. The amount of autocorrelation in the irregular as           M4  =  0.140
+       described by the average duration of run (Table F 2.D).
+
+
+    5. The number of months it takes the change in the trend-      M5  =  1.567
+       cycle to surpass the amount of change in the irregular
+       (from Table F 2.E).
+
+    6. The amount of year to year change in the irregular as       M6  =  1.488
+       compared to the amount of year to year change in the
+       seasonal (from Table F 2.H).
+
+    7. The amount of moving seasonality present relative to        M7  =  0.276
+       the amount of stable seasonality (from Table F 2.I).
+
+
+    8. The size of the fluctuations in the seasonal component      M8  =  0.097
+       throughout the whole series.
+
+
+    9. The average linear movement in the seasonal component       M9  =  0.085
+       throughout the whole series.
+
+
+   10. Same as 8, calculated for recent years only.                M10 =  0.089
+
+
+
+   11. Same as 9, calculated for recent years only.                M11 =  0.082
+
+
+          *** ACCEPTED *** at the level   0.50
+
+          *** Check the  3 above measures which failed.
+
+          *** Q (without M2) =  0.52  ACCEPTED.
+
+
+
+  QS statistic for seasonality:
+  Original Series                                    71.32  (P-Value =     0.0000)
+  Original Series (EV adj)                           76.76  (P-Value =     0.0000)
+  Residuals                                           0.00  (P-Value =     1.0000)
+  Seasonally Adjusted Series                          0.00  (P-Value =     1.0000)
+  Seasonally Adjusted Series (EV adj)                 0.00  (P-Value =     1.0000)
+  Irregular Series                                    0.00  (P-Value =     1.0000)
+  Irregular Series (EV adj)                           0.00  (P-Value =     1.0000)
+        Residencial            PAGE  25, SERIES Residencial
+
+
+  Visually significant residual trading day peaks have been
+  found in the spectral plots of the following series starting in 2013.Jan:
+
+          differenced, transformed seasonally adjusted series (Table E2) (1 Trading Day peak(s))
+
+          Modified irregular component (Table E3) (1 Trading Day peak(s))
+
+        Residencial            PAGE  26, SERIES Residencial
+ G 0  10*LOG(SPECTRUM) of the differenced, transformed Prior Adjusted Series
+      (Table B1).  Spectrum estimated from 2013.Jan to 2019.Jul.
+ ++++++++++I+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++I
+      -0.12I                    S                                        I     -0.12
+           I                    S                                        I
+           I                    S                                        I
+           I                    S                                        I
+      -2.52I                    S                                        I     -2.52
+           I                    S                                        I
+           I                    S                                        I
+           I                    S                                        I
+      -4.92I                    S                                        I     -4.92
+           I                    S                                        I
+           I                    S                                        I
+           I                    S                                        I
+      -7.31I                    S                                        I     -7.31
+           I                    S                                        I
+           I                    S                                        I
+           I                    S                                        I
+      -9.71I                    S                                        I     -9.71
+           I                    S                                        I
+           I                   *S                                        I
+           I                   *S                             S          I
+     -12.10I                   *S                             S          I    -12.10
+           I                   *S                             S          I
+           I                   *S*                  S         S          I
+           I                   *S*                  S         S          I
+     -14.50I                   *S*                  S         S          I    -14.50
+           I                   *S*                  S         S    *     I
+           I                  **S*                  S         S    *     I
+           I                  **S*  *               S         S*   *     I
+     -16.90I                  **S*  *               S         S*   *     I    -16.90
+           I                  **S** *               S*        S*   *     I
+           I                  **S****        **    *S*        S*   *     I
+           I                  **S****        **    *S*        S*   *     I
+     -19.29I                  **S*****       **    *S*        S*   *     I    -19.29
+           I                 ***S*****       **    *S*       *S*   *     I
+           I                 ***S*****       **    *S*     * *S*   *     I
+           I                 ***S*****       **   **S*     ***S*   *     I
+     -21.69I                 ***S*****       **   **S*     ***S*   *     I    -21.69
+           I                 ***S*****      ****  **S*     ***S*  ***   SI
+           I                 ***S*****      **** ***S*     ***S*  ***   SI
+           I            *   ****S******  *S ********S*     ***S*T ***   SI
+     -24.09I           **   ****S******  *S*********S*    ****S*T ***   SI    -24.09
+           I           ***  ****S*********S*********S*T   ****S*T ***  *SI
+           I        **S*** *****S*********S*********S*T   ****S*T****  *SI
+           I        **S*********S*********S*********S*T   ****S*T****  *SI
+     -26.48I        **S*********S*********S*********S*T   ****S*T***** *SI    -26.48
+           I       ***S*********S*********S*********S*T   ****S*T*******SI
+           I       ***S*********S*********S*********S*T  *****S*T*******SI
+           I       ***S*********S*********S*********S*T* *****S*T*******SI
+     -28.88I       ***S*********S*********S*********S*T* *****S*T*******SI    -28.88
+           I      ****S*********S*********S*********S*T*******S*T*******SI
+           I      ****S*********S*********S*********S*T*******S*T*******SI
+           I***   ****S*********S*********S*********S*T*******S*T*******SI
+     -31.27I**********S*********S*********S*********S*T*******S*T*******SI    -31.27
+ ++++++++++I+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++I
+            S=SEASONAL FREQUENCIES, T=TRADING DAY FREQUENCIES
+        Residencial            PAGE  27, SERIES Residencial
+ G 1  10*LOG(SPECTRUM) of the differenced, transformed seasonally adjusted 
+      data (Table E2).  Spectrum estimated from 2013.Jan to 2019.Jul.
+ ++++++++++I+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++I
+     -18.39I                                          T                  I    -18.39
+           I                                          T                  I
+           I                                          T                  I
+           I                                          T                  I
+     -20.59I                                          T                  I    -20.59
+           I                                          T                  I
+           I                                          T                  I
+           I                                          T                  I
+     -22.79I                                          T                  I    -22.79
+           I                                          T*                 I
+           I                        *        *        T*           **    I
+           I                        *        *        T*           **    I
+     -24.99I                        *        *        T*           **    I    -24.99
+           I                       **        *        T*           **    I
+           I                       **        *        T*   *       **    I
+           I                       ***       *        T*   *      ****   I
+     -27.18I                       ***       *       *T*   **     ****   I    -27.18
+           I                       ***       **   *  *T*   **     ****   I
+           I                       ***       **   *  *T*   **     ****   I
+           I                       ****      **  *** *T*   **     ****   I
+     -29.38I                       ****      **  ***S*T*   **     ****   I    -29.38
+           I                       *****     **  ***S*T*   **     *****  I
+           I                      ******     **  ***S*T** ***    ******  I
+           I                      ******    ***  ***S*T** ***    ******  I
+     -31.58I    *                 *******   ********S*T** ***    ******* I    -31.58
+           I    *                 *******   ********S*T*******   *******SI
+           I    *                 *******   ********S*T*******   *******SI
+           I    *  *              *******   ********S*T*******  T*******SI
+     -33.78I    *  *              *******   ********S*T*******  T*******SI    -33.78
+           I    *  *       *      ********  ********S*T*******S T*******SI
+           I    * **       *      ******** *********S*T*******S*T*******SI
+           I    ****       **    *********S*********S*T*******S*T*******SI
+     -35.97I    *****      **    *********S*********S*T*******S*T*******SI    -35.97
+           I   ******   * ***    *********S*********S*T*******S*T*******SI
+           I   ******  ******    *********S*********S*T*******S*T*******SI
+           I   ******  ******    *********S*********S*T*******S*T*******SI
+     -38.17I   ******* ******    *********S*********S*T*******S*T*******SI    -38.17
+           I   *******S******   S*********S*********S*T*******S*T*******SI
+           I   *******S*******  S*********S*********S*T*******S*T*******SI
+           I   *******S*******  S*********S*********S*T*******S*T*******SI
+     -40.37I   *******S*******  S*********S*********S*T*******S*T*******SI    -40.37
+           I   *******S*********S*********S*********S*T*******S*T*******SI
+           I   *******S*********S*********S*********S*T*******S*T*******SI
+           I   *******S*********S*********S*********S*T*******S*T*******SI
+     -42.57I   *******S*********S*********S*********S*T*******S*T*******SI    -42.57
+           I  ********S*********S*********S*********S*T*******S*T*******SI
+           I  ********S*********S*********S*********S*T*******S*T*******SI
+           I  ********S*********S*********S*********S*T*******S*T*******SI
+     -44.76I  ********S*********S*********S*********S*T*******S*T*******SI    -44.76
+           I  ********S*********S*********S*********S*T*******S*T*******SI
+           I  ********S*********S*********S*********S*T*******S*T*******SI
+           I *********S*********S*********S*********S*T*******S*T*******SI
+     -46.96I**********S*********S*********S*********S*T*******S*T*******SI    -46.96
+ ++++++++++I+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++I
+            S=SEASONAL FREQUENCIES, T=TRADING DAY FREQUENCIES
+        Residencial            PAGE  28, SERIES Residencial
+ G 2  10*LOG(SPECTRUM) of the Modified Irregular (Table E3).  
+      Spectrum estimated from 2013.Jan to 2019.Jul.
+ ++++++++++I+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++I
+     -24.01I                                          T                  I    -24.01
+           I                                          T                  I
+           I                                          T                  I
+           I                        *                 T                  I
+     -25.66I                        *                 T                  I    -25.66
+           I                        *                 T                  I
+           I                        *                 T                  I
+           I                       **                 T                  I
+     -27.31I                       **        *        T                  I    -27.31
+           I                       **        *        T                  I
+           I                       **        *        T*                 I
+           I                       **        *        T*                 I
+     -28.96I                       ***       *        T*                 I    -28.96
+           I                       ***       *        T*            *    I
+           I                       ***       *        T*           **    I
+           I                       ***       *        T*           **    I
+     -30.61I                       ***       *        T*   *       **    I    -30.61
+           I               *       ****      *        T*   *       **    I
+           I               *       ****      *        T*   *       **    I
+           I               *      ******     **       T*   *       **    I
+     -32.26I               *      ******     **   *   T*   *       **    I    -32.26
+           I              **      ******     **   *  *T*   **      ***   I
+           I              **      ******     **   *  *T*   **     ****   I
+           I       *      **      ******     **   ** *T*   **     ****   I
+     -33.91I       *   ** **      ******    ***   ** *T*   **     ****   I    -33.91
+           I       **  *****      *******   ***  ***S*T*   **     ****   I
+           I       ** S******     *******   ***  ***S*T*   **     ****   I
+           I       ***S******     *******   ***  ***S*T*  ***     ****   I
+     -35.55I       ***S******    ********   ***  ***S*T** ***     *****  I    -35.55
+           I       ***S******    ********   **** ***S*T** ***     *****  I
+           I       ***S******    ********   ********S*T** ***     *****  I
+           I      ****S******    *********  ********S*T******    ******  I
+     -37.20I      ****S******    ********* *********S*T******    ******  I    -37.20
+           I      ****S******    ********* *********S*T*******   ******* I
+           I      ****S******    *********S*********S*T*******   ******* I
+           I      ****S*******  S*********S*********S*T*******   *******SI
+     -38.85I      ****S*******  S*********S*********S*T*******   *******SI    -38.85
+           I      ****S*******  S*********S*********S*T*******  T*******SI
+           I      ****S*********S*********S*********S*T*******S T*******SI
+           I      ****S*********S*********S*********S*T*******S*T*******SI
+     -40.50I     *****S*********S*********S*********S*T*******S*T*******SI    -40.50
+           I     *****S*********S*********S*********S*T*******S*T*******SI
+           I     *****S*********S*********S*********S*T*******S*T*******SI
+           I     *****S*********S*********S*********S*T*******S*T*******SI
+     -42.15I     *****S*********S*********S*********S*T*******S*T*******SI    -42.15
+           I    ******S*********S*********S*********S*T*******S*T*******SI
+           I    ******S*********S*********S*********S*T*******S*T*******SI
+           I    ******S*********S*********S*********S*T*******S*T*******SI
+     -43.80I    ******S*********S*********S*********S*T*******S*T*******SI    -43.80
+           I   *******S*********S*********S*********S*T*******S*T*******SI
+           I   *******S*********S*********S*********S*T*******S*T*******SI
+           I  ********S*********S*********S*********S*T*******S*T*******SI
+     -45.45I**********S*********S*********S*********S*T*******S*T*******SI    -45.45
+ ++++++++++I+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++I
+            S=SEASONAL FREQUENCIES, T=TRADING DAY FREQUENCIES
